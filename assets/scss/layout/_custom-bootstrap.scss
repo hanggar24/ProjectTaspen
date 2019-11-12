@@ -1,0 +1,98 @@
+
+      @import '../base/main-base';
+      
+      .navbar-toggler {
+            padding: 0;
+            outline: none !important;
+            border: none !important;
+        }
+
+        .dropdown-menu {
+
+
+            border: none !important;
+
+            
+
+        }
+
+        
+@media (min-width: 900px) {
+
+
+    .dropdown-menu {
+        display: block !important;
+        visibility: hidden;
+        opacity: 0.6;
+
+@include boxshadowMX( 0 .5rem 1rem rgba(0,0,0,.15));
+    
+
+        @include transformMX (translateY(30px));
+      
+
+        @include transitionMX(all .2s);
+       
+        border: none !important;
+
+    }
+
+
+    .dropdown-item:hover{
+
+        @include transitionMX(  all .1s linear);
+   
+        font-weight: bold;
+    }
+
+
+    
+
+    .dropdown:hover .dropdown-menu {
+
+
+        @include transformMX( translateY(0px));
+        visibility: visible;
+        opacity: 1;
+        
+
+    }
+
+}
+
+
+.carousel-indicators li {
+    box-sizing: content-box;
+
+    margin: 7px;
+
+    border-radius: 50% !important;
+
+    border: solid 1.2px white;
+background:  transparent;
+    @include w-h(6px, 6px);
+@include boxshadowMX( 0 .5rem 1rem rgba(0,0,0,.15));
+}
+
+.carousel-indicators li.active{
+    background: white;
+}
+
+
+.dropdown-toggle::after {
+display: none;
+}    
+
+ .dropdown-toggle::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+     content: "\f078" !important;
+     position: absolute;
+     right: -15px;
+    } 
+
+
+    .table td, .table th {
+      
+        border-top:none !important;
+    }

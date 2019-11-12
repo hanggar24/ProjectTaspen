@@ -36,14 +36,24 @@
         border: none !important;
 
     }
+ 
+    .dropdown-item{
+        color: $primary-color !important;
 
-
-    .dropdown-item:hover{
-
-        @include transitionMX(  all .1s linear);
+        &:hover{
+            @include transitionMX(  all .1s linear);
    
-        font-weight: bold;
+            font-weight: bold;
+        }
+
+        &:active{
+            background: transparent;
+            font-weight: bold;
+        }
     }
+
+    
+  
 
 
     
@@ -95,4 +105,9 @@ display: none;
     .table td, .table th {
       
         border-top:none !important;
+    }
+
+
+    .navbar-light .navbar-nav .nav-link {
+        color: $primary-color !important;
     }

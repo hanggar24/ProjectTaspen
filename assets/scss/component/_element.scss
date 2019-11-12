@@ -93,12 +93,15 @@ border-radius: 10px;
 
 }
 
-
+.table-gbp{
+    color: $primary-color;
+}
 
 @include md {
 
     .table-gbp td:first-child{
         min-width: 250px;
+        
 }
 
 

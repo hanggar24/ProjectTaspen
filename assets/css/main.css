@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@keyframes tabs-width {
+  from {
+    width: 0%;
+    left: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
 .navbar-toggler {
   padding: 0;
   outline: none !important;
@@ -85,6 +94,44 @@
   color: #314599 !important;
 }
 
+.nav-tabs .nav-link.active {
+  color: #314599 !important;
+  font-weight: bold;
+  position: relative;
+  height: 70px;
+}
+.nav-tabs .nav-link.active::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: RGB(223, 185, 76);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  animation: tabs-width 0.2s linear;
+}
+
+.nav-tabs .nav-link {
+  color: #ced4da !important;
+  border: none !important;
+  border-top-left-radius: none !important;
+  border-top-right-radius: none !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.dropdown-item {
+  color: #314599 !important;
+}
+
+@keyframes tabs-width {
+  from {
+    width: 0%;
+    left: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
 @media (min-width: 768px) {
   #galery {
     min-height: 400px;
@@ -129,6 +176,15 @@
   }
 }
 
+@keyframes tabs-width {
+  from {
+    width: 0%;
+    left: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
 .button-primary1 {
   font-family: "Ubuntu", sans-serif !important;
   color: white;
@@ -183,6 +239,15 @@
   box-shadow: 0 0 2pt #314599;
 }
 
+@keyframes tabs-width {
+  from {
+    width: 0%;
+    left: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
 .el-info {
   min-width: 55%;
   border-top-right-radius: 30px;
@@ -258,6 +323,15 @@
     min-width: 250px;
   }
 }
+@keyframes tabs-width {
+  from {
+    width: 0%;
+    left: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
 .icon-info {
   color: RGB(223, 185, 76);
   width: 80px;
@@ -272,6 +346,15 @@
   font-size: 20px;
 }
 
+@keyframes tabs-width {
+  from {
+    width: 0%;
+    left: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
 .bg-navbar {
   background: rgba(255, 255, 255, 0.3);
 }
@@ -355,7 +438,19 @@
 .ul-gbp li {
   margin-bottom: 20px;
 }
+.ul-decimal {
+  list-style-type: decimal;
+}
 
+@keyframes tabs-width {
+  from {
+    width: 0%;
+    left: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
 html {
   scroll-behavior: smooth;
 }

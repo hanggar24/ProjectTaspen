@@ -111,3 +111,42 @@ display: none;
     .navbar-light .navbar-nav .nav-link {
         color: $primary-color !important;
     }
+
+
+
+
+
+
+    // TABS//
+
+    .nav-tabs .nav-link.active{
+        color: $primary-color !important;
+        font-weight: bold;
+        position: relative;
+height: 70px;
+        &::after{
+            content: "";
+            @include w-h (100%, 5px);
+            background: $secondary-color;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+
+            animation: tabs-width .2s linear;
+
+            
+        }
+    }
+
+    .nav-tabs .nav-link{
+        color: $placeholder-color !important;
+     border: none !important; 
+     border-top-left-radius: none !important; 
+     border-top-right-radius: none !important; 
+     padding-bottom: 1.5rem !important;
+
+    }
+
+    .dropdown-item{
+        color:  $primary-color !important;
+    }

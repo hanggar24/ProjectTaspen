@@ -125,7 +125,8 @@
 }
 
 
-.ul-gbp{
+.ul{
+&-gbp{
     list-style-type: none;
 padding-left: 0;
 
@@ -134,3 +135,9 @@ padding-left: 0;
     }
 
 }
+
+&-decimal{
+    list-style-type: decimal;
+}
+}
+

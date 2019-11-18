@@ -13,6 +13,8 @@
   <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css" />
   <link href="assets/js/aos/aos.css" rel="stylesheet">
 
+  <link rel="icon" sizes="192x192" href="assets/img/logo-bpr.png">
+
   <link rel="stylesheet" href="assets/css//bootstrap/bootstrap.min.css">
 
   <link href="assets/css/fontawesome/css/all.css" rel="stylesheet">
@@ -689,6 +691,8 @@
 
     $(document).ready(function () {
 
+      AOS.init();
+
 
       $("#btn-nav").click(function () {
         $(".button-toggler:first-child").toggleClass("animation-toggler-1")
@@ -717,7 +721,7 @@
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 600,
 
         responsive: [
           {
@@ -741,8 +745,7 @@
     });
   </script>
 
-  <script>
-   AOS.init();</script>
+
 </body>
 
 </html>

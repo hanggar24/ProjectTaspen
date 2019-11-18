@@ -267,8 +267,8 @@
 }
 @media (max-width: 768px) {
   .img-partner {
-    filter: grayscale(0%);
-    opacity: 0.9;
+    filter: grayscale(10%);
+    opacity: 0.8;
   }
 }
 .img-slide-galery {

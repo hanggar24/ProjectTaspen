@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@keyframes tabs-width {
+  from {
+    width: 0%;
+    left: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
 .navbar-toggler {
   padding: 0;
   outline: none !important;
@@ -77,7 +86,8 @@
   right: -15px;
 }
 
-.table td, .table th {
+.table td,
+.table th {
   border-top: none !important;
 }
 
@@ -95,7 +105,7 @@
   content: "";
   width: 100%;
   height: 5px;
-  background: RGB(223, 185, 76);
+  background: #f7b500;
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -186,10 +196,10 @@
 }
 .button-toggler {
   width: 30px;
+  height: 5px;
   background-color: #314599;
   border-radius: 3px;
   display: block;
-  height: 5px;
   margin: 7px 0;
   transition: all 0.4s cubic-bezier(0.61, 0.59, 0.26, 0.93);
 }
@@ -234,8 +244,8 @@
 }
 .el-slide-galery {
   position: relative;
-  height: 200px;
   width: 100%;
+  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -251,37 +261,6 @@
   }
 }
 
-.img-partner {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  filter: grayscale(100%);
-  opacity: 0.5;
-  -webkit-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  transition: all 0.1s;
-}
-.img-partner:hover {
-  filter: grayscale(0%);
-  opacity: 0.7;
-}
-@media (max-width: 768px) {
-  .img-partner {
-    filter: grayscale(10%);
-    opacity: 0.8;
-  }
-}
-.img-slide-galery {
-  object-fit: contain;
-  width: 300px;
-  height: 300px;
-}
-.img-galery {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-
 .table-gbp {
   color: #314599;
 }
@@ -292,12 +271,12 @@
   }
 }
 .icon-info {
-  color: RGB(223, 185, 76);
+  color: #f7b500;
   width: 80px;
   height: 80px;
   font-size: 24px;
   border-radius: 50%;
-  border: solid 2px RGB(223, 185, 76);
+  border: solid 2px #f7b500;
 }
 .icon-contact {
   background: #314599;
@@ -390,6 +369,37 @@
 }
 .ul-decimal {
   list-style-type: decimal;
+}
+
+.img-partner {
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+.img-partner:hover {
+  filter: grayscale(0%);
+  opacity: 0.7;
+}
+@media (max-width: 768px) {
+  .img-partner {
+    filter: grayscale(10%);
+    opacity: 0.8;
+  }
+}
+.img-slide-galery {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+.img-galery {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 html {

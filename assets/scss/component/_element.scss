@@ -24,10 +24,9 @@
   }
 
   &-slide-galery {
-    position: relative;
 
     @include w-h (100%, 200px);
-
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
   }

@@ -1,24 +1,19 @@
-@import '../base/main-base';
+@import "../base/main-base";
 
+.icon {
+  &-info {
+    color: $secondary-color;
 
-.icon{
+    @include w-h(80px, 80px);
+    font-size: 24px;
+    border-radius: 50%;
+    border: solid 2px $secondary-color;
+  }
 
-    &-info{
-        color: $secondary-color;
+  &-contact {
+    background: $primary-color;
+    color: white;
 
-        @include w-h(80px, 80px );
-      font-size: 24px;
-        border-radius:50%;
-        border: solid 2px $secondary-color;
-    }
-
-
-
-    &-contact{
-      background: $primary-color;
-      color: white;
-    
-
-      font-size: 20px;
-    }
+    font-size: 20px;
+  }
 }

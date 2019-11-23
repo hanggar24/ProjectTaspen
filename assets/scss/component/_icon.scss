@@ -16,4 +16,17 @@
 
     font-size: 20px;
   }
+
+
+  &-form{
+    position: absolute;
+    right: 26px;
+    top: 12px;
+    color: $placeholder-color;
+    transition: .2s;
+
+    @include md {
+    font-size: 10px;
+    }
+  }
 }

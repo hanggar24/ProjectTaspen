@@ -68,6 +68,21 @@
   }
 }
 
+.mb-10{
+
+  @include md{
+    margin-bottom: 200px;
+  }
+
+}
+
+
+.pb-10{
+  @include md{
+    padding-bottom: 200px;
+  }
+}
+
 .mt {
   &-60px {
     margin-top: -60px;
@@ -149,3 +164,5 @@
     @include w-h(100%, 100%);
   }
 }
+
+

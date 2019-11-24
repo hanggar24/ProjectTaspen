@@ -53,3 +53,12 @@
     margin-bottom: 150px;
   }
 }
+
+
+
+#misi{
+  @include md{
+    padding-top: 100px;
+    margin-top: -140px;
+  }
+}

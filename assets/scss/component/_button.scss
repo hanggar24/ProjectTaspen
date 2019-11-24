@@ -67,7 +67,7 @@
     &:focus ~ .icon-form{
       color:  $primary-color;
       @include transitionMX(all .2s);
-      transition-delay: .2s;
+      transition-delay: .1s;
     }
   }
 }

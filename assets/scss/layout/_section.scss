@@ -44,3 +44,12 @@
     margin-bottom: 200px;
   }
 }
+
+
+
+
+#info-bank{
+  @include md {
+    margin-bottom: 150px;
+  }
+}

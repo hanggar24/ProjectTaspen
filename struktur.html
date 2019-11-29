@@ -26,7 +26,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap" rel="stylesheet">
 
-  <title>Hello, world!</title>
+  <title>Struktur Perusahaan</title>
 </head>
 
 <body>
@@ -224,57 +224,22 @@
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="assets/js/base/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="assets/js/base/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="assets/js/base/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+   <!-- core js -->
+   <script src="assets/js/base/jquery-3.3.1.slim.min.js"></script>
+   <script src="assets/js/base/popper.min.js"></script>
+   <script src="assets/js/base/bootstrap.min.js"></script>
+ 
+ <!-- ---core -->
+   <!-- navbar -->
+   <script type="text/javascript" src="assets/js/custom/navbar.js"></script>
+   <!-- navbar -->
   <script type="text/javascript" src="assets/js/aos/aos.js">  </script>
-  <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+
 
 
   <script type="text/javascript">
 
 
-    $(document).ready(function () {
-
-
-      $("#btn-nav").click(function () {
-        $(".button-toggler:first-child").toggleClass("animation-toggler-1")
-
-        $(".button-toggler:nth-child(2)").toggleClass("animation-toggler-2")
-        $(".button-toggler:nth-child(3)").toggleClass("animation-toggler-3")
-
-
-          ;
-      });
-
-      // navbar
-
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-          $('header').addClass('shadow');
-        } else {
-          $('header').removeClass('shadow');
-        }
-      });
-
-
-
-
-
-
-
-
-    });
-
-  </script>
-
-  <script>
    AOS.init();</script>
 
 </body>

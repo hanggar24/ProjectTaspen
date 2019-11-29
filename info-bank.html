@@ -284,14 +284,15 @@ left: -51px;
 
 
   </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="assets/js/base/jquery-3.3.1.slim.min.js"
- ></script>
-  <script src="assets/js/base/popper.min.js"
- ></script>
-  <script src="assets/js/base/bootstrap.min.js"
- ></script>
+  <!-- core js -->
+  <script src="assets/js/base/jquery-3.3.1.slim.min.js"></script>
+  <script src="assets/js/base/popper.min.js"></script>
+  <script src="assets/js/base/bootstrap.min.js"></script>
+
+<!-- ---core -->
+  <!-- navbar -->
+  <script type="text/javascript" src="assets/js/custom/navbar.js"></script>
+  <!-- navbar -->
   <script type="text/javascript" src="assets/js/aos/aos.js">  </script>
   <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
 
@@ -299,58 +300,6 @@ left: -51px;
   <script type="text/javascript">
 
 
-    $(document).ready(function () {
-
-
-      $("#btn-nav").click(function () {
-        $(".button-toggler:first-child").toggleClass("animation-toggler-1")
-
-        $(".button-toggler:nth-child(2)").toggleClass("animation-toggler-2")
-        $(".button-toggler:nth-child(3)").toggleClass("animation-toggler-3")
-
-
-          ;
-      });
-
-      // navbar
-
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-          $('header').addClass('shadow');
-        } else {
-          $('header').removeClass('shadow');
-        }
-      });
-
-
-      
-
-
-
-      $('.el-slide-galery-parent').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1400,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      });
-
-
-
-
-    });
-
-  </script>
-
-  <script>
     AOS.init();</script>
 
 </body>

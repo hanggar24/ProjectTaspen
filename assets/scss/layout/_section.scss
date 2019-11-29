@@ -1,6 +1,10 @@
 @import "../base/main-base";
 
 #galery {
+  @include max-md {
+    max-width: 100vw;
+    overflow: hidden;
+  }
   @include md {
     min-height: 400px;
   }
@@ -20,6 +24,7 @@
     min-height: 400px;
   }
 }
+
 
 #slide-galery {
   min-height: 100px;

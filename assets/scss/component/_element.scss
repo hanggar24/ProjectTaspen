@@ -1,5 +1,4 @@
 @import "../base/main-base";
-
 .el {
   &-info {
     min-width: 55%;
@@ -9,7 +8,6 @@
     line-height: 3;
     padding-right: 5px;
   }
-
   &-button-carousel {
     position: absolute;
     right: 0;
@@ -17,58 +15,42 @@
     z-index: 1;
     background: white;
   }
-
   &-layout-info {
     @include w-h(280px, 280px);
     border-radius: 15px;
   }
-
   &-slide-galery {
-
     @include w-h (100%, 200px);
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
   }
-
   &-slide-bank {
-
     @include w-h (100%, 100px);
-
     @include md{
       @include w-h (100%, 140px);
     }
     position: relative;
-     
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
-
 .periode-layout {
   position: relative;
   border-radius: 10px;
-
   z-index: 2;
-
   @include md {
     min-width: 400px;
   }
 }
-
-
-
 .table-gbp {
   color: $primary-color;
 }
-
 @include md {
   .table-gbp td:first-child {
     min-width: 250px;
   }
 }
-
-
 .i-frame-maps{
 position: relative;
 z-index: 2;
@@ -76,11 +58,7 @@ z-index: 2;
   @include md {
     height: 640px;
   }
-
 }
-
-
-
 .i-frame-yt{
   position: relative;
   z-index: 2;

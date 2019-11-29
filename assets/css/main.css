@@ -125,6 +125,12 @@
   color: #314599 !important;
 }
 
+@media (max-width: 768px) {
+  #galery {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+}
 @media (min-width: 768px) {
   #galery {
     min-height: 400px;

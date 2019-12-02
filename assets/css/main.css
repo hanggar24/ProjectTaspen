@@ -177,7 +177,7 @@
 
 @media (min-width: 768px) {
   #layanan {
-    margin-bottom: 200px;
+    min-height: 400px;
   }
 }
 

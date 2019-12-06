@@ -162,6 +162,11 @@
 }
 @media (min-width: 768px) {
   #slide-galery {
+    min-height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  #slide-galery {
     min-height: 500px;
   }
 }
@@ -275,8 +280,8 @@
   background: white;
 }
 .el-layout-info {
-  width: 280px;
-  height: 280px;
+  width: 270px;
+  height: 270px;
   border-radius: 15px;
 }
 .el-slide-galery {

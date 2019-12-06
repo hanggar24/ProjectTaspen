@@ -19,6 +19,7 @@
     font-weight: bold !important;
   }
 }
+
 .animation {
   &-toggler-1 {
     @include transformMX(translateY(12px) rotate(45deg));
@@ -104,9 +105,6 @@
       margin-bottom: 20px;
     }
   }
-  &-decimal {
-    list-style-type: decimal;
-  }
 }
 .img {
   &-partner {
@@ -131,5 +129,17 @@
   &-galery {
     object-fit: contain;
     @include w-h(100%, 100%);
+  }
+}
+
+.carousel-height {
+  @include w-h(100%, 150px);
+  
+  @include md {
+    height: 300px;
+  }
+
+  @include xl {
+    height: 570px;
   }
 }

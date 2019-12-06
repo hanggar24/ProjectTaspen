@@ -31,6 +31,10 @@
   max-width: 100vw;
   overflow: hidden;
   @include md {
+    min-height: 300px;
+  }
+
+  @include lg {
     min-height: 500px;
   }
 }
@@ -51,9 +55,9 @@
 }
 
 
-
-
 #info-bank{
+  max-width: 100vw;
+  overflow: hidden;
   @include md {
     margin-bottom: 150px;
   }

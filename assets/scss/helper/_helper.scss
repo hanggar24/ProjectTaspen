@@ -130,11 +130,16 @@
     object-fit: contain;
     @include w-h(100%, 100%);
   }
+  &-carousel{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
 }
 
-.carousel-height {
+.carousel-item {
   @include w-h(100%, 150px);
-  
+
   @include md {
     height: 300px;
   }

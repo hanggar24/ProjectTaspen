@@ -29,6 +29,9 @@
   .dropdown-item {
     color: $primary-color !important;
 
+  font-weight: 400 ;
+  font-size: 14px;
+
     &:hover {
       @include transitionMX(all 0.1s linear);
 
@@ -112,6 +115,7 @@
   border-top-right-radius: none !important;
   padding-bottom: 1.5rem !important;
   font-size: 14px;
+
 }
 
 .dropdown-item {
@@ -120,4 +124,9 @@
 
 
 
+.navbar-light .navbar-nav .nav-link {
 
+  font-weight: 400 ;
+  font-size: 14px;
+
+}

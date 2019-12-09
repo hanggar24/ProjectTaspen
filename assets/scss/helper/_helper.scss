@@ -133,7 +133,7 @@
   &-carousel{
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 
@@ -147,4 +147,9 @@
   @include xl {
     height: 570px;
   }
+}
+
+
+.text-black{
+  color: rgba(0, 0, 0, .5) !important;
 }

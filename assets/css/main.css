@@ -37,6 +37,8 @@
 
   .dropdown-item {
     color: #314599 !important;
+    font-weight: 400;
+    font-size: 14px;
   }
   .dropdown-item:hover {
     -webkit-transition: all 0.1s linear;
@@ -123,6 +125,11 @@
 
 .dropdown-item {
   color: #314599 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 400;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -312,7 +319,7 @@
 }
 @media (min-width: 768px) {
   .periode-layout {
-    min-width: 400px;
+    min-width: 340px;
   }
 }
 
@@ -509,7 +516,7 @@
 .img-carousel {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .carousel-item {
@@ -525,6 +532,10 @@
   .carousel-item {
     height: 570px;
   }
+}
+
+.text-black {
+  color: rgba(0, 0, 0, 0.5) !important;
 }
 
 html {

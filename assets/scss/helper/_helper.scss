@@ -6,6 +6,9 @@
   &-app {
     background: $third-color;
   }
+  &-app-2 {
+    background: $fifth-color;
+  }
   &-footer {
     background: $fourth-color;
   }
@@ -97,8 +100,11 @@
     margin-left: -20px;
   }
 }
-.ul {
-  &-gbp {
+
+.ul-gbp {
+
+
+  ul,ol{
     list-style-type: none;
     padding-left: 0;
     li {

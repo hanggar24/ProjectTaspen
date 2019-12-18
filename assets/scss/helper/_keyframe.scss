@@ -8,3 +8,23 @@
     width: 100%;
   }
 }
+
+
+
+@keyframes swing {
+  30% {
+
+    transform: rotateX(-100deg);
+
+    transform-origin: top;
+    opacity: 0;
+  }
+
+  100% {
+
+    transform: rotateX(0deg);
+
+    transform-origin: top;
+    opacity: 1;
+  }
+}

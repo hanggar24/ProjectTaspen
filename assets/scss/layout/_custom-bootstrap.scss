@@ -130,3 +130,16 @@
   font-size: 14px;
 
 }
+
+
+@include max-md {
+  .dropdown .dropdown-menu {
+
+
+
+    animation: swing .4s ease-in-out alternate both;
+
+  
+  
+  }
+}

@@ -1,28 +1,34 @@
 @import "../base/main-base";
+
 .bg {
   &-navbar {
     background: rgba(255, 255, 255, 0.3);
   }
+
   &-app {
     background: $third-color;
   }
+
   &-app-2 {
     background: $fifth-color;
   }
+
   &-footer {
     background: $fourth-color;
   }
 
-  &-copyright{
+  &-copyright {
     background: $primary-color;
   }
 }
+
 .color {
   &-primary {
-    color: $primary-color !important ;
+    color: $primary-color !important;
   }
+
   &-primary-bold {
-    color: $primary-color !important ;
+    color: $primary-color !important;
     font-weight: bold !important;
   }
 }
@@ -31,91 +37,129 @@
   &-toggler-1 {
     @include transformMX(translateY(12px) rotate(45deg));
   }
+
   &-toggler-2 {
     @include transformMX(translateY(0px) rotate(-45deg));
   }
+
   &-toggler-3 {
     @include transformMX(scale(0));
   }
 }
+
 .mx-w {
   &-100 {
     max-width: 100%;
   }
+
   &-100px {
     max-width: 100px;
   }
+
   &-95 {
     max-width: 95px;
   }
+
   &-50px {
     max-width: 50px;
   }
 }
+
 .w {
   &-400 {
     width: 400px;
   }
 }
+
 .p {
   &-relative {
     position: relative;
     z-index: 1;
   }
 }
+
 .mb-10 {
   @include md {
     margin-bottom: 200px;
   }
 }
+
 .pb-10 {
   @include md {
     padding-bottom: 200px;
   }
 }
+
 .mt {
   &-60px {
     margin-top: -60px;
   }
+
   &-100px {
     margin-top: 100px;
   }
+
   &-min-100px {
     margin-top: -100px;
   }
 }
+
 .m {
   &-15px {
     margin: 15px;
   }
 }
+
 .lh {
   &-3 {
     line-height: 3;
   }
 }
+
 @include max-md {
   h2 {
     font-size: 28px !important;
   }
 }
+
 .ml {
   &-20px {
     margin-left: -20px;
   }
 }
 
+
+.ul-none {
+  list-style-type: none;
+}
+
+
+.ul-disc {
+  list-style-type: disc;
+
+  li {
+    margin: 10px 0;
+  }
+
+  a {
+    color: $primary-color;
+  }
+}
+
 .ul-gbp {
 
 
-  ul,ol{
+  ul,
+  ol {
     list-style-type: none;
     padding-left: 0;
+
     li {
       margin-bottom: 20px;
     }
   }
 }
+
 .img {
   &-partner {
     @include transitionMX(all 0.1s);
@@ -123,24 +167,29 @@
     object-fit: contain;
     filter: grayscale(100%);
     opacity: 0.5;
+
     &:hover {
       filter: grayscale(0%);
       opacity: 0.7;
     }
+
     @include max-md {
       filter: grayscale(10%);
       opacity: 0.8;
     }
   }
+
   &-slide-galery {
     @include w-h(300px, 300px);
     object-fit: contain;
   }
+
   &-galery {
     object-fit: contain;
     @include w-h(100%, 100%);
   }
-  &-carousel{
+
+  &-carousel {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -160,6 +209,6 @@
 }
 
 
-.text-black{
+.text-black {
   color: rgba(0, 0, 0, .5) !important;
 }

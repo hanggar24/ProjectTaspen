@@ -190,6 +190,10 @@
 .btn-accordion[aria-expanded=true] .fa-caret-down {
   transform: rotate(180deg);
 }
+.btn-accordion[aria-expanded=true] .btn-link {
+  font-weight: bold;
+  transition: all 0.3s;
+}
 
 @media (max-width: 768px) {
   #galery {

@@ -210,5 +210,11 @@
     .fa-caret-down {
       transform: rotate(180deg);
     }
+
+
+    .btn-link {
+      font-weight: bold;
+      transition: all .3s;
+    }
   }
 }

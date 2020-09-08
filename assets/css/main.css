@@ -109,6 +109,10 @@
   color: #314599 !important;
 }
 
+.tab-k {
+  height: 40% !important;
+}
+
 .nav-tabs .nav-link.active {
   color: #314599 !important;
   font-weight: bold;
